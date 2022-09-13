@@ -7,6 +7,8 @@ TagManager:
   - Silla
   - mesa
   - Pendrive
+  - PMisionLabel
+  - ActionUI
   layers:
   - Default
   - TransparentFX

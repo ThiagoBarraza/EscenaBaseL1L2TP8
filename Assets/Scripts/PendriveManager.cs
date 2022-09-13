@@ -10,6 +10,7 @@ public class PendriveManager : MonoBehaviour
     [SerializeField] bool MissionStarted = false;
     [SerializeField] GameObject[] Pendrives;
     NearPendrive NP;
+    NearPC NpC;
     [SerializeField] TMP_Text PickupText;
     [SerializeField] TMP_Text Objective;
     [SerializeField] string[] ObjectiveText;
@@ -30,25 +31,36 @@ public class PendriveManager : MonoBehaviour
             ActionUI[i].SetActive(false);
         }
         NP = FindObjectOfType<NearPendrive>();
+        NpC = FindObjectOfType<NearPC>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (MissionStarted)
+        if (MissionStarted && Pendrives[0].activeInHierarchy == true)
         {
-            StartMission();
+            Objective.text = ObjectiveText[0];
         }
 
-        if (NP.Near)
+        if (NP.Near && Pendrives[1].activeInHierarchy == false)
         {
             PickUpPendrive();
         }
+        
 
-        //if(NP.Near && picked)
-        //{
-        //    DescargarAV();
-        //}
+        if(NpC.NearComputer && Pendrives[0].activeInHierarchy == false)
+        {
+            DescargarAV();
+        }
+
+        if(!NpC.NearComputer && !NP && MissionStarted)
+        {
+            for (int i = 0; i < ActionUI.Length; i++)
+            {
+                ActionUI[i].SetActive(false);
+            }
+        }
+        
     }
 
     void OnTriggerEnter(Collider col)
@@ -92,11 +104,12 @@ public class PendriveManager : MonoBehaviour
 
     }
 
-    [SerializeField] bool picked = false;
+    
     void PickUpPendrive()
     {
         Debug.Log("Picking");
-        
+        if (Pendrives[0].activeInHierarchy == true)
+        {
             for (int i = 0; i < ActionUI.Length; i++)
             {
                 ActionUI[i].SetActive(true);
@@ -104,45 +117,44 @@ public class PendriveManager : MonoBehaviour
             PickupText.text = "Para agarrar";
             if (Input.GetKeyDown(KeyCode.E))
             {
-                
-                picked = true;
                 for (int i = 0; i < ActionUI.Length; i++)
                 {
                     ActionUI[i].SetActive(false);
                 }
-                Destroy(Pendrives[0]);
+                Pendrives[0].SetActive(false);
+                NP.Near = false;
+                Objective.text = ObjectiveText[1];
             }
-        
-    }
-    void StartMission()
-    {
-        Objective.text = ObjectiveText[0];
-
-        if(picked == true)
-        {
-            Objective.text = ObjectiveText[1];
         }
     }
 
+    float tiempo = 3;
     void DescargarAV()
     {
-        if (picked)
+        Debug.Log("DAV");
+        
+        for (int i = 0; i < ActionUI.Length; i++)
         {
-            for (int i = 0; i < ActionUI.Length; i++)
-            {
-                ActionUI[i].SetActive(true);
-            }
-            PickupText.text = "Para insertar";
+            ActionUI[i].SetActive(true);
         }
+        PickupText.text = "Para insertar";
         if (Input.GetKeyDown(KeyCode.E))
         {
-
-            picked = false;
-            for (int i = 0; i < ActionUI.Length; i++)
-            {
-                ActionUI[i].SetActive(false);
-            }
             Pendrives[1].SetActive(true);
+            NpC.NearComputer = false;
+            PickupText.text = "Para retirar";
+            Debug.Log("Downloding AV");
         }
+        //if (Input.GetKeyDown(KeyCode.E) && Pendrives[1] == true && tiempo < 0)
+        //{
+        //    Pendrives[1].SetActive(false);
+        //    NpC.NearComputer = false;
+            
+        //    Debug.Log("Downloaded AV");
+        //}
+        //else
+        //{
+        //    tiempo -= Time.deltaTime;
+        //}
     }
 }

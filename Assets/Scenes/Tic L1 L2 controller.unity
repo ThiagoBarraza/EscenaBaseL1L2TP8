@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -489,6 +489,7 @@ MonoBehaviour:
   ObjectiveText:
   - 'Objetivo: Busca un pendrive'
   - 'Objetivo: Instala un antivirus'
+  - 'Objetivo: Usa el antivirus'
 --- !u!135 &326243923
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13314,6 +13315,7 @@ GameObject:
   - component: {fileID: 1107075387}
   - component: {fileID: 1103683865}
   - component: {fileID: 1104782169}
+  - component: {fileID: 1106984220}
   m_Layer: 0
   m_Name: Techo.014
   m_TagString: Untagged
@@ -13321,6 +13323,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &1106984220
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106984219}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.2000065, y: 0.002096653, z: 6.6000004}
+  m_Center: {x: 3.14514, y: 0.4774195, z: 0.9344975}
 --- !u!1 &1106984221
 GameObject:
   m_ObjectHideFlags: 0
@@ -16367,19 +16382,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 999623544}
   m_PrefabAsset: {fileID: 0}
---- !u!135 &1118527770
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118527769}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1120241939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17361,6 +17363,8 @@ GameObject:
   - component: {fileID: 1566319365}
   - component: {fileID: 1566319364}
   - component: {fileID: 1566319363}
+  - component: {fileID: 1566319368}
+  - component: {fileID: 1566319367}
   m_Layer: 0
   m_Name: AVScreen
   m_TagString: Untagged
@@ -17440,6 +17444,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1566319367
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566319362}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1566319368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566319362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4c924b0975bfa47aba54ef2e4c8cb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NearComputer: 0
 --- !u!1001 &1646183934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17871,8 +17901,6 @@ GameObject:
   - component: {fileID: 1890075472}
   - component: {fileID: 1890075471}
   - component: {fileID: 1890075470}
-  - component: {fileID: 1890075475}
-  - component: {fileID: 1890075474}
   m_Layer: 0
   m_Name: Gabinete (2)
   m_TagString: Untagged
@@ -17953,33 +17981,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!135 &1890075474
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1890075469}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.2
-  m_Center: {x: -0.18727529, y: -0.13698992, z: 0.051089194}
---- !u!114 &1890075475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1890075469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bc6f61a0aa438e42abcba4611910b79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Near: 0
-  IsComputer: 1
 --- !u!1001 &1929154863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18453,4 +18454,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Near: 0
-  IsComputer: 0

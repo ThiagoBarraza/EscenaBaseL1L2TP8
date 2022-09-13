@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NearPendrive : MonoBehaviour
+public class NearPC : MonoBehaviour
 {
-    public bool Near = false;
+    public bool NearComputer;
 
     // Start is called before the first frame update
     void Start()
@@ -23,20 +23,21 @@ public class NearPendrive : MonoBehaviour
         
             if (col.gameObject.tag == "Player")
             {
-                Near = true;
-                Debug.Log("Near a pendrive");
+                NearComputer = true;
+                Debug.Log("Near a computer");
 
             }
         
-        
+
     }
     void OnTriggerExit(Collider col)
     {
         
+        
             if (col.gameObject.tag == "Player")
             {
-                Near = false;
-                
+                NearComputer = false;
+
 
             }
         

@@ -26,16 +26,6 @@ public class NearPendrive : MonoBehaviour
             
         }
     }
-
-    void OnTriggerStay(Collider col)
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Debug.Log("Pendrive Acquired");
-            Destroy(gameObject);
-        }
-    }
-
     void OnTriggerExit(Collider col)
     {
         if (col.gameObject.tag == "Player")

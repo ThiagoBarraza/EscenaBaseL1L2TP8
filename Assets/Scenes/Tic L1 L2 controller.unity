@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -480,6 +480,10 @@ MonoBehaviour:
   MissionUIElements: {fileID: 0}
   ActionUI: []
   MissionStarted: 0
+  Pendrives:
+  - {fileID: 1321517614153792640}
+  - {fileID: 1118527769}
+  - {fileID: 785022671}
   PickupText: {fileID: 1495256858}
   Objective: {fileID: 391979875}
   ObjectiveText:
@@ -791,6 +795,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391979873}
   m_CullTransparentMesh: 0
+--- !u!1001 &410917778
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8562534208962782178, guid: 98983ab85c785b540afa605d7950048c,
+        type: 3}
+      propertyPath: m_Name
+      value: Pendrive3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562534208962782178, guid: 98983ab85c785b540afa605d7950048c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pendrive
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739925649088249398, guid: 98983ab85c785b540afa605d7950048c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3052
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739925649088249398, guid: 98983ab85c785b540afa605d7950048c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2652
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739925649088249398, guid: 98983ab85c785b540afa605d7950048c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.2329
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739925649088249398, guid: 98983ab85c785b540afa605d7950048c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739925649088249398, guid: 98983ab85c785b540afa605d7950048c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739925649088249398, guid: 98983ab85c785b540afa605d7950048c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739925649088249398, guid: 98983ab85c785b540afa605d7950048c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739925649088249398, guid: 98983ab85c785b540afa605d7950048c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739925649088249398, guid: 98983ab85c785b540afa605d7950048c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739925649088249398, guid: 98983ab85c785b540afa605d7950048c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739925649088249398, guid: 98983ab85c785b540afa605d7950048c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 98983ab85c785b540afa605d7950048c, type: 3}
 --- !u!1 &416446173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,6 +1104,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d12497650bbcba247834d150b4e992f7, type: 3}
+--- !u!1 &785022671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8562534208962782178, guid: 98983ab85c785b540afa605d7950048c,
+    type: 3}
+  m_PrefabInstance: {fileID: 410917778}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &843151793
 GameObject:
   m_ObjectHideFlags: 0
@@ -6062,7 +6146,7 @@ PrefabInstance:
     - target: {fileID: 8562534208962782178, guid: 98983ab85c785b540afa605d7950048c,
         type: 3}
       propertyPath: m_Name
-      value: 'Pendrive '
+      value: Pendrive2
       objectReference: {fileID: 0}
     - target: {fileID: 8562534208962782178, guid: 98983ab85c785b540afa605d7950048c,
         type: 3}
@@ -6124,7 +6208,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8223749945702358869, guid: 98983ab85c785b540afa605d7950048c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 98983ab85c785b540afa605d7950048c, type: 3}
 --- !u!1001 &1000264840
 PrefabInstance:
@@ -11637,7 +11722,6 @@ GameObject:
   - component: {fileID: 1107075233}
   - component: {fileID: 1103683719}
   - component: {fileID: 1104782023}
-  - component: {fileID: 1106984066}
   - component: {fileID: 1106984125}
   m_Layer: 0
   m_Name: MesaLab.023
@@ -11646,19 +11730,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984067
 GameObject:
   m_ObjectHideFlags: 0
@@ -11670,7 +11741,6 @@ GameObject:
   - component: {fileID: 1107075235}
   - component: {fileID: 1103683713}
   - component: {fileID: 1104782017}
-  - component: {fileID: 1106984068}
   - component: {fileID: 1106984120}
   m_Layer: 0
   m_Name: MesaLab.024
@@ -11679,19 +11749,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984069
 GameObject:
   m_ObjectHideFlags: 0
@@ -11703,7 +11760,6 @@ GameObject:
   - component: {fileID: 1107075237}
   - component: {fileID: 1103683771}
   - component: {fileID: 1104782075}
-  - component: {fileID: 1106984070}
   - component: {fileID: 1106984130}
   m_Layer: 0
   m_Name: MesaLab.021
@@ -11712,19 +11768,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984071
 GameObject:
   m_ObjectHideFlags: 0
@@ -11736,7 +11779,6 @@ GameObject:
   - component: {fileID: 1107075239}
   - component: {fileID: 1103683717}
   - component: {fileID: 1104782021}
-  - component: {fileID: 1106984072}
   - component: {fileID: 1106984126}
   m_Layer: 0
   m_Name: MesaLab.022
@@ -11745,19 +11787,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984073
 GameObject:
   m_ObjectHideFlags: 0
@@ -11769,7 +11798,6 @@ GameObject:
   - component: {fileID: 1107075241}
   - component: {fileID: 1103683727}
   - component: {fileID: 1104782031}
-  - component: {fileID: 1106984074}
   - component: {fileID: 1106984114}
   m_Layer: 0
   m_Name: MesaLab.027
@@ -11778,19 +11806,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984075
 GameObject:
   m_ObjectHideFlags: 0
@@ -11802,7 +11817,6 @@ GameObject:
   - component: {fileID: 1107075243}
   - component: {fileID: 1103683721}
   - component: {fileID: 1104782025}
-  - component: {fileID: 1106984076}
   - component: {fileID: 1106984112}
   m_Layer: 0
   m_Name: MesaLab.028
@@ -11811,19 +11825,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984077
 GameObject:
   m_ObjectHideFlags: 0
@@ -11835,7 +11836,6 @@ GameObject:
   - component: {fileID: 1107075245}
   - component: {fileID: 1103683715}
   - component: {fileID: 1104782019}
-  - component: {fileID: 1106984078}
   - component: {fileID: 1106984118}
   m_Layer: 0
   m_Name: MesaLab.025
@@ -11844,19 +11844,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984079
 GameObject:
   m_ObjectHideFlags: 0
@@ -11868,7 +11855,6 @@ GameObject:
   - component: {fileID: 1107075247}
   - component: {fileID: 1103683725}
   - component: {fileID: 1104782029}
-  - component: {fileID: 1106984080}
   - component: {fileID: 1106984116}
   m_Layer: 0
   m_Name: MesaLab.026
@@ -11877,19 +11863,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984081
 GameObject:
   m_ObjectHideFlags: 0
@@ -11901,7 +11874,6 @@ GameObject:
   - component: {fileID: 1107075249}
   - component: {fileID: 1103683735}
   - component: {fileID: 1104782039}
-  - component: {fileID: 1106984082}
   - component: {fileID: 1106984106}
   m_Layer: 0
   m_Name: MesaLab.031
@@ -11910,19 +11882,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984083
 GameObject:
   m_ObjectHideFlags: 0
@@ -11934,7 +11893,6 @@ GameObject:
   - component: {fileID: 1107075251}
   - component: {fileID: 1103683729}
   - component: {fileID: 1104782033}
-  - component: {fileID: 1106984084}
   - component: {fileID: 1106984104}
   m_Layer: 0
   m_Name: MesaLab.032
@@ -11943,19 +11901,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: Jeronimo
 --- !u!1 &1106984085
 GameObject:
   m_ObjectHideFlags: 0
@@ -11967,7 +11912,6 @@ GameObject:
   - component: {fileID: 1107075253}
   - component: {fileID: 1103683723}
   - component: {fileID: 1104782027}
-  - component: {fileID: 1106984086}
   - component: {fileID: 1106984110}
   m_Layer: 0
   m_Name: MesaLab.029
@@ -11976,19 +11920,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984087
 GameObject:
   m_ObjectHideFlags: 0
@@ -12000,7 +11931,6 @@ GameObject:
   - component: {fileID: 1107075255}
   - component: {fileID: 1103683733}
   - component: {fileID: 1104782037}
-  - component: {fileID: 1106984088}
   - component: {fileID: 1106984108}
   m_Layer: 0
   m_Name: MesaLab.030
@@ -12009,19 +11939,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984089
 GameObject:
   m_ObjectHideFlags: 0
@@ -12033,7 +11950,6 @@ GameObject:
   - component: {fileID: 1107075257}
   - component: {fileID: 1103683743}
   - component: {fileID: 1104782047}
-  - component: {fileID: 1106984090}
   - component: {fileID: 1106984100}
   m_Layer: 0
   m_Name: MesaLab.035
@@ -12042,19 +11958,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984091
 GameObject:
   m_ObjectHideFlags: 0
@@ -12066,7 +11969,6 @@ GameObject:
   - component: {fileID: 1107075259}
   - component: {fileID: 1103683737}
   - component: {fileID: 1104782041}
-  - component: {fileID: 1106984092}
   - component: {fileID: 1106984098}
   m_Layer: 0
   m_Name: MesaLab.036
@@ -12075,19 +11977,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984093
 GameObject:
   m_ObjectHideFlags: 0
@@ -12099,7 +11988,6 @@ GameObject:
   - component: {fileID: 1107075261}
   - component: {fileID: 1103683731}
   - component: {fileID: 1104782035}
-  - component: {fileID: 1106984094}
   - component: {fileID: 1106984102}
   m_Layer: 0
   m_Name: MesaLab.033
@@ -12108,19 +11996,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984095
 GameObject:
   m_ObjectHideFlags: 0
@@ -12132,7 +12007,6 @@ GameObject:
   - component: {fileID: 1107075263}
   - component: {fileID: 1103683741}
   - component: {fileID: 1104782045}
-  - component: {fileID: 1106984096}
   - component: {fileID: 1106984101}
   m_Layer: 0
   m_Name: MesaLab.034
@@ -12141,19 +12015,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984097
 GameObject:
   m_ObjectHideFlags: 0
@@ -12533,7 +12394,6 @@ GameObject:
   - component: {fileID: 1107075289}
   - component: {fileID: 1103683775}
   - component: {fileID: 1104782079}
-  - component: {fileID: 1106984122}
   - component: {fileID: 1106984134}
   m_Layer: 0
   m_Name: MesaLab.019
@@ -12542,19 +12402,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984123
 GameObject:
   m_ObjectHideFlags: 0
@@ -12566,7 +12413,6 @@ GameObject:
   - component: {fileID: 1107075291}
   - component: {fileID: 1103683769}
   - component: {fileID: 1104782073}
-  - component: {fileID: 1106984124}
   - component: {fileID: 1106984132}
   m_Layer: 0
   m_Name: MesaLab.020
@@ -12575,19 +12421,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!65 &1106984125
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12625,7 +12458,6 @@ GameObject:
   - component: {fileID: 1107075295}
   - component: {fileID: 1103683773}
   - component: {fileID: 1104782077}
-  - component: {fileID: 1106984128}
   - component: {fileID: 1106984136}
   m_Layer: 0
   m_Name: MesaLab.018
@@ -12634,19 +12466,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984129
 GameObject:
   m_ObjectHideFlags: 0
@@ -14229,7 +14048,6 @@ GameObject:
   - component: {fileID: 1107075201}
   - component: {fileID: 1103683943}
   - component: {fileID: 1104781991}
-  - component: {fileID: 1106984290}
   - component: {fileID: 1106984291}
   m_Layer: 0
   m_Name: MesaLab.039
@@ -14238,19 +14056,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!65 &1106984291
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14275,7 +14080,6 @@ GameObject:
   - component: {fileID: 1107075205}
   - component: {fileID: 1103683739}
   - component: {fileID: 1104782043}
-  - component: {fileID: 1106984294}
   - component: {fileID: 1106984300}
   m_Layer: 0
   m_Name: MesaLab.037
@@ -14284,19 +14088,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984295
 GameObject:
   m_ObjectHideFlags: 0
@@ -14308,7 +14099,6 @@ GameObject:
   - component: {fileID: 1107075207}
   - component: {fileID: 1103683941}
   - component: {fileID: 1104781989}
-  - component: {fileID: 1106984296}
   - component: {fileID: 1106984298}
   m_Layer: 0
   m_Name: MesaLab.038
@@ -14317,19 +14107,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106984296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106984295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3047ed010caac4fb5f0696f792d097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 
 --- !u!1 &1106984297
 GameObject:
   m_ObjectHideFlags: 0
@@ -16584,6 +16361,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d12497650bbcba247834d150b4e992f7, type: 3}
+--- !u!1 &1118527769 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8562534208962782178, guid: 98983ab85c785b540afa605d7950048c,
+    type: 3}
+  m_PrefabInstance: {fileID: 999623544}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1118527770
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118527769}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1120241939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17377,79 +17173,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495256856}
   m_CullTransparentMesh: 0
---- !u!1 &1507141610
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1507141613}
-  - component: {fileID: 1507141612}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!20 &1507141612
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507141610}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1507141613
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507141610}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1541210865
 GameObject:
   m_ObjectHideFlags: 0
@@ -17602,7 +17325,7 @@ PrefabInstance:
     - target: {fileID: 2228221194159427167, guid: d12497650bbcba247834d150b4e992f7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2228221194159427167, guid: d12497650bbcba247834d150b4e992f7,
         type: 3}
@@ -17675,7 +17398,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6f2aba96ba71b014886af581b04db089, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17762,7 +17485,7 @@ PrefabInstance:
     - target: {fileID: 2228221194159427167, guid: d12497650bbcba247834d150b4e992f7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2228221194159427167, guid: d12497650bbcba247834d150b4e992f7,
         type: 3}
@@ -18148,6 +17871,8 @@ GameObject:
   - component: {fileID: 1890075472}
   - component: {fileID: 1890075471}
   - component: {fileID: 1890075470}
+  - component: {fileID: 1890075475}
+  - component: {fileID: 1890075474}
   m_Layer: 0
   m_Name: Gabinete (2)
   m_TagString: Untagged
@@ -18228,6 +17953,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!135 &1890075474
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890075469}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.2
+  m_Center: {x: -0.18727529, y: -0.13698992, z: 0.051089194}
+--- !u!114 &1890075475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890075469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc6f61a0aa438e42abcba4611910b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Near: 0
+  IsComputer: 1
 --- !u!1001 &1929154863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18283,7 +18035,7 @@ PrefabInstance:
     - target: {fileID: 1895376494061076151, guid: 75de62f9478685d4b94ac9d5b3c8e86e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1895376494061076151, guid: 75de62f9478685d4b94ac9d5b3c8e86e,
         type: 3}
@@ -18605,7 +18357,7 @@ PrefabInstance:
     - target: {fileID: 8562534208962782178, guid: 98983ab85c785b540afa605d7950048c,
         type: 3}
       propertyPath: m_Name
-      value: Pendrive
+      value: Pendrive1
       objectReference: {fileID: 0}
     - target: {fileID: 8562534208962782178, guid: 98983ab85c785b540afa605d7950048c,
         type: 3}
@@ -18701,3 +18453,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Near: 0
+  IsComputer: 0

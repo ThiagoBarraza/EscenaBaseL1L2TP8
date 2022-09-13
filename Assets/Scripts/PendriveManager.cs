@@ -8,6 +8,7 @@ public class PendriveManager : MonoBehaviour
     [SerializeField] GameObject MissionUIElements;
     [SerializeField] GameObject[] ActionUI;
     [SerializeField] bool MissionStarted = false;
+    [SerializeField] GameObject[] Pendrives;
     NearPendrive NP;
     [SerializeField] TMP_Text PickupText;
     [SerializeField] TMP_Text Objective;
@@ -19,6 +20,10 @@ public class PendriveManager : MonoBehaviour
     {
         MissionUIElements = GameObject.FindGameObjectWithTag("PMisionLabel");
         MissionUIElements.SetActive(false);
+        for(int i = 1; i < Pendrives.Length; i++)
+        {
+            Pendrives[i].SetActive(false);
+        }
         ActionUI = GameObject.FindGameObjectsWithTag("ActionUI");
         for(int i = 0; i < ActionUI.Length; i++)
         {
@@ -39,6 +44,11 @@ public class PendriveManager : MonoBehaviour
         {
             PickUpPendrive();
         }
+
+        //if(NP.Near && picked)
+        //{
+        //    DescargarAV();
+        //}
     }
 
     void OnTriggerEnter(Collider col)
@@ -47,8 +57,6 @@ public class PendriveManager : MonoBehaviour
         {
             ShowMissionUI(true);
         }
-
-        
     }
 
     void OnTriggerStay(Collider col)
@@ -84,13 +92,11 @@ public class PendriveManager : MonoBehaviour
 
     }
 
-    bool picked = false;
+    [SerializeField] bool picked = false;
     void PickUpPendrive()
     {
+        Debug.Log("Picking");
         
-
-        if (!picked)
-        {
             for (int i = 0; i < ActionUI.Length; i++)
             {
                 ActionUI[i].SetActive(true);
@@ -98,14 +104,14 @@ public class PendriveManager : MonoBehaviour
             PickupText.text = "Para agarrar";
             if (Input.GetKeyDown(KeyCode.E))
             {
+                
+                picked = true;
                 for (int i = 0; i < ActionUI.Length; i++)
                 {
                     ActionUI[i].SetActive(false);
-                    picked = true;
-
                 }
+                Destroy(Pendrives[0]);
             }
-        }
         
     }
     void StartMission()
@@ -115,6 +121,28 @@ public class PendriveManager : MonoBehaviour
         if(picked == true)
         {
             Objective.text = ObjectiveText[1];
+        }
+    }
+
+    void DescargarAV()
+    {
+        if (picked)
+        {
+            for (int i = 0; i < ActionUI.Length; i++)
+            {
+                ActionUI[i].SetActive(true);
+            }
+            PickupText.text = "Para insertar";
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+
+            picked = false;
+            for (int i = 0; i < ActionUI.Length; i++)
+            {
+                ActionUI[i].SetActive(false);
+            }
+            Pendrives[1].SetActive(true);
         }
     }
 }

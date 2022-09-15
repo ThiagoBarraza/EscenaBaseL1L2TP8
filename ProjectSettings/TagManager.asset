@@ -9,6 +9,8 @@ TagManager:
   - Pendrive
   - PMisionLabel
   - ActionUI
+  - Ammo
+  - ToHide
   layers:
   - Default
   - TransparentFX

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PendriveManager : MonoBehaviour
 {
@@ -10,9 +11,13 @@ public class PendriveManager : MonoBehaviour
     [SerializeField] GameObject[] ActionUI;
     [SerializeField] bool MissionStarted = false;
     [SerializeField] GameObject[] Pendrives;
+    [SerializeField] public Slider LoadBar;
     NearPendrive NP;
     NearPC NpC;
-    public float tiempo = 5;
+    [SerializeField] float tiempo = 5;
+    [SerializeField] GameObject UiToHide;
+    [SerializeField] GameData GD;
+    [SerializeField] private float ActualTiempo;
     [SerializeField] TMP_Text PickupText;
     [SerializeField] TMP_Text Objective;
     [SerializeField] string[] ObjectiveText;
@@ -35,11 +40,26 @@ public class PendriveManager : MonoBehaviour
         }
         NP = FindObjectOfType<NearPendrive>();
         NpC = FindObjectOfType<NearPC>();
+        ActualTiempo = tiempo;
+        LoadBar.value = ActualTiempo / tiempo;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (GD.MinigameBeaten)
+        {
+            Pendrives[2].SetActive(true);
+            ShowMissionUI(true);
+            Objective.text = ObjectiveText[4];
+            Instantiate(UiToHide, gameObject.transform.position, gameObject.transform.rotation);
+            Debug.Log("HiderInstantiated");
+            Destroy(gameObject, 2);
+        }
+        
+        
+        
+        
         if (MissionStarted && Pendrives[0].activeInHierarchy == true)
         {
             Objective.text = ObjectiveText[0];
@@ -161,18 +181,20 @@ public class PendriveManager : MonoBehaviour
             
             
         }
-        if (Pendrives[1].activeInHierarchy && tiempo < 0)
+        if (Pendrives[1].activeInHierarchy && ActualTiempo < 0)
         {
             Pendrives[1].SetActive(false);
+            Objective.text = ObjectiveText[2];
             ShowActionUI(false);
             NpC.NearComputer = false;
             AvCharged = true;
             Debug.Log("Downloaded AV");
         }
-        if (Pendrives[1].activeInHierarchy && tiempo > 0)
+        if (Pendrives[1].activeInHierarchy && ActualTiempo > 0)
         {
-            tiempo -= Time.deltaTime;
-            Debug.Log(tiempo);
+            ActualTiempo -= Time.deltaTime;
+            LoadBar.value = ActualTiempo / tiempo;
+            Debug.Log(ActualTiempo);
         }
     }
 
@@ -183,4 +205,6 @@ public class PendriveManager : MonoBehaviour
             ActionUI[i].SetActive(state);
         }
     }
+
+    
 }

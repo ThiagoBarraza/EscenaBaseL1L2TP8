@@ -54,6 +54,7 @@ public class PendriveManager : MonoBehaviour
             Objective.text = ObjectiveText[4];
             Instantiate(UiToHide, gameObject.transform.position, gameObject.transform.rotation);
             Debug.Log("HiderInstantiated");
+            GD.MinigameBeaten = false;
             Destroy(gameObject, 2);
         }
         
@@ -65,18 +66,18 @@ public class PendriveManager : MonoBehaviour
             Objective.text = ObjectiveText[0];
         }
 
-        if (NP.Near && Pendrives[1].activeInHierarchy == false && !AvCharged)
+        if (NP.Near && Pendrives[1].activeInHierarchy == false && !AvCharged && MissionStarted)
         {
             PickUpPendrive();
         }
         
 
-        if(Pendrives[0].activeInHierarchy == false)
+        if(Pendrives[0].activeInHierarchy == false && MissionStarted)
         {
             DescargarAV();
         }
 
-        if(!NpC.NearComputer && !NP && MissionStarted)
+        if(!NpC.NearComputer && !NP)
         {
             ShowActionUI(false);
         }
@@ -89,7 +90,7 @@ public class PendriveManager : MonoBehaviour
         {
             ShowMissionUI(true);
         }
-        if (col.gameObject.tag == "Player" && MissionStarted)
+        if (col.gameObject.tag == "Player" && MissionStarted && AvCharged)
         {
             ShowActionUI(true);
             PickupText.text = "Para insertar";
